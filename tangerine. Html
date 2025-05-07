@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tangerine - Wooden Crafts</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #f4f0e6;
+      color: #4b3a2f;
+    }
+    header {
+      background-color: #a67c52;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      background-color: #8b5e3c;
+    }
+    nav a {
+      color: white;
+      padding: 1rem;
+      text-decoration: none;
+    }
+    nav a:hover {
+      background-color: #a67c52;
+    }
+    .gallery, .catalog {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1rem;
+      padding: 2rem;
+    }
+    .gallery img, .catalog img {
+      width: 100%;
+      border-radius: 8px;
+    }
+    .catalog-item {
+      background: #fff6eb;
+      padding: 1rem;
+      border-radius: 8px;
+      text-align: center;
+    }
+    form {
+      max-width: 600px;
+      margin: 2rem auto;
+      background: #fff6eb;
+      padding: 1.5rem;
+      border-radius: 8px;
+    }
+    input, textarea, button {
+      width: 100%;
+      margin-bottom: 1rem;
+      padding: 0.5rem;
+      border: 1px solid #a67c52;
+      border-radius: 4px;
+    }
+    button {
+      background-color: #a67c52;
+      color: white;
+      cursor: pointer;
+    }
+    footer {
+      text-align: center;
+      background-color: #8b5e3c;
+      color: white;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Tangerine</h1>
+    <p>Handcrafted Wooden Products</p>
+  </header>
+  <nav>
+    <a href="#gallery">Gallery</a>
+    <a href="#catalog">Products</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="gallery" class="gallery">
+    <img src="image1.jpg" alt="Wooden Koala Holder">
+    <img src="image2.jpg" alt="Wooden Hex Lamp">
+    <img src="image3.jpg" alt="Wooden Trays">
+    <img src="image4.jpg" alt="Wooden Wall Shelf">
+  </section>
+
+  <section id="catalog" class="catalog">
+    <div class="catalog-item">
+      <img src="image1.jpg" alt="Wooden Koala Holder">
+      <h3>Koala Holder</h3>
+      <p>Charming wooden holder for brushes or pens.</p>
+      <p><strong>$20</strong></p>
+      <button>Add to Cart</button>
+    </div>
+    <div class="catalog-item">
+      <img src="image2.jpg" alt="Wooden Lamp">
+      <h3>Hex Lamp</h3>
+      <p>Stylish wooden desk lamp with Edison bulb.</p>
+      <p><strong>$45</strong></p>
+      <button>Add to Cart</button>
+    </div>
+    <!-- Add more products here -->
+  </section>
+
+  <section id="contact">
+    <form>
+      <h2>Contact Us</h2>
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    © 2025 Tangerine. All rights reserved.
+  </footer>
+</body>
+</html>
